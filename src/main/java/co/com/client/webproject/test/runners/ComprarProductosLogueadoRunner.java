@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         snippets = SnippetType.CAMELCASE,
         features = {"src\\main\\resources\\features\\comprarProductosLogueado.feature"},
-        glue = {"co.com.client.webproject.test.stepdefinition"},
+        glue = {"co.com.client.webproject.test.stepdefinition.comprarproductoslogueado"},
         tags = ""
 )
 public class ComprarProductosLogueadoRunner {

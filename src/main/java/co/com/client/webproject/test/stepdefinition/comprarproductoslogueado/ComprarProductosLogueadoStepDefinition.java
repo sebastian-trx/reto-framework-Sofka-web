@@ -1,4 +1,4 @@
-package co.com.client.webproject.test.stepdefinition;
+package co.com.client.webproject.test.stepdefinition.comprarproductoslogueado;
 
 import co.com.client.webproject.test.controllers.*;
 import co.com.client.webproject.test.controllers.openwebpages.StartBrowserWebController;
