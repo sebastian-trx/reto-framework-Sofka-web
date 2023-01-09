@@ -48,11 +48,11 @@ public class CheckOutPageController {
             CheckOutPage checkOutPage = new CheckOutPage(webAction.getDriver());
             webAction.moveTo(checkOutPage.getContinueButton1(),1,true);
             webAction.click(checkOutPage.getContinueButton1(),2,true);
-             //warnFieldMessages.add(webAction.getText(checkOutPage.getCountryWarnMessage(),2,true));
-            warnFieldMessages.add(webAction.getText(checkOutPage.getCityWarnMessage(),20,true));
-            //warnFieldMessages.add(webAction.getText(checkOutPage.getAddressWarnMessage(),20,true));
-            //warnFieldMessages.add(webAction.getText(checkOutPage.getZipCodeWarnMessage(),20,true));
-            //warnFieldMessages.add(webAction.getText(checkOutPage.getPhoneWarnMessage(),20,true));
+            warnFieldMessages.add(webAction.getText(checkOutPage.getCountryWarnMessage(),1,true));
+            warnFieldMessages.add(webAction.getText(checkOutPage.getCityWarnMessage(),1,true));
+            warnFieldMessages.add(webAction.getText(checkOutPage.getAddressWarnMessage(),1,true));
+            warnFieldMessages.add(webAction.getText(checkOutPage.getZipCodeWarnMessage(),1,true));
+            warnFieldMessages.add(webAction.getText(checkOutPage.getPhoneWarnMessage(),1,true));
         }catch (WebActionsException e){
             Report.reportFailure("error al obtener los mensajes de los campos vacios del formulario",e);
         }

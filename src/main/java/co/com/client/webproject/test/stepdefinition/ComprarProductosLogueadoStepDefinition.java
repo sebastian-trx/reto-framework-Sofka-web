@@ -123,10 +123,13 @@ public class ComprarProductosLogueadoStepDefinition extends GeneralSetup{
     public void elSistemaMostraraUnMensajeEnLosCamposObligatoriosVacios() {
         CheckOutPageController checkOutPageController = new CheckOutPageController();
         checkOutPageController.setWebAction(webAction);
-
-        //ArrayList<String> warningMessagesFromEmptyFields = new ArrayList<>();
-
-        Assert.Hard.thatString(checkOutPageController.emptyCheckOutFields().get(0)).isEqualTo("City is required");
+        ArrayList<String> warningMessagesFromEmptyFields = new ArrayList<>();
+        warningMessagesFromEmptyFields.add("Country is required.");
+        warningMessagesFromEmptyFields.add("City is required");
+        warningMessagesFromEmptyFields.add("Street address is required");
+        warningMessagesFromEmptyFields.add("Zip / postal code is required");
+        warningMessagesFromEmptyFields.add("Phone is required");
+        Assert.Hard.thatListIsEqual(checkOutPageController.emptyCheckOutFields(),warningMessagesFromEmptyFields);
     }
 
     @After

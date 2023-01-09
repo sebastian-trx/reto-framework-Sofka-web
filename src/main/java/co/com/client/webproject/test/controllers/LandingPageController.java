@@ -30,4 +30,15 @@ public class LandingPageController {
             Report.reportFailure("error al intentar ir al enlace de los libros");
         }
     }
+    public void goToContactUs(){
+        try {
+            LandingPage landingPage = new LandingPage(webAction.getDriver());
+            webAction.moveTo(landingPage.getContactUsLink(), 1,true);
+            webAction.click(landingPage.getContactUsLink(),1,true);
+        }catch (WebActionsException e){
+            Report.reportFailure("error al intentar ir al enlace de contactUs");
+        }
+    }
+
+
 }

@@ -70,6 +70,8 @@ public class Helper {
 
         customer.setCountry(COUNTRY_BY_DEFAULT_USA);
 
+        customer.setMessage(MESSAGE_BY_DEFAULT);
+
         return customer;
     }
 }

@@ -15,6 +15,7 @@ public class Customer {
     private String mobilePhone;
     private String state;
     private String country;
+    private String message;
 
     public String getGender() {
         return gender;
@@ -126,5 +127,13 @@ public class Customer {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 }

@@ -7,6 +7,7 @@ public class Dictionary {
 
     public static final String STATE_BY_DEFAULT_FLORIDA = "Florida";
     public static final String COUNTRY_BY_DEFAULT_USA = "United States";
+    public static final String MESSAGE_BY_DEFAULT = "Hola, tengo una pregunta";
     public static final String EMPTY_STRING = "";
     public static final String SPACE_STRING = " ";
 

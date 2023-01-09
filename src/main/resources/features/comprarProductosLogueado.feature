@@ -1,6 +1,7 @@
 #language: es
   @FeatureName:comprarProductosLogueado
   Característica: comprar productos estando logeado
+
     probar el carro de compras involucrando
     la compra de productos con usuario logeado
 

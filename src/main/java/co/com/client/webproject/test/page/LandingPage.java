@@ -16,12 +16,19 @@ public class LandingPage {
     @FindBy(xpath = "/html/body/div[4]/div[1]/div[2]/ul[1]/li[1]/a")
     WebElement booksLink;
 
+    @CacheLookup
+    @FindBy(xpath = "/html/body/div[4]/div[2]/div[1]/div[1]/ul/li[6]/a")
+    WebElement contactUsLink;
+
     public WebElement getRegister(){
         return register;
     }
 
     public WebElement getBooksLink(){
         return booksLink;
+    }
+    public WebElement getContactUsLink() {
+        return contactUsLink;
     }
 
     public LandingPage(WebDriver driver){
